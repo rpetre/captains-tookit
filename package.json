@@ -1,0 +1,55 @@
+{
+  "name": "captains-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@iconify/react": "^3.2.2",
+    "@mantine/core": "^4.2.9",
+    "@mantine/dates": "^4.2.9",
+    "@mantine/hooks": "^4.2.9",
+    "@mantine/modals": "^4.2.9",
+    "@mantine/notifications": "^4.2.9",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "framer-motion": "^3.10.6",
+    "overmind": "^28.0.2",
+    "overmind-react": "^29.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "6",
+    "react-scripts": "4.0.3",
+    "sass": "^1.57.1",
+    "typescript": "^4.4.2",
+    "use-react-router-breadcrumbs": "^3.0.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "PORT=3001 BROWSER=none react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

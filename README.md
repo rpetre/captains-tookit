@@ -5,6 +5,23 @@ This is meant to be a reimplementation of https://github.com/David-Melo/captains
 
 This is not intended to become a working product and it's being made solely for my entertainment and education. I might decide to also abandon it whenever I find something more fun to play with. In fact the only reason I'm making this public is that maybe I'll share some ideas with David at some point in the future, should he pick up his project again.
 
+## changes so far
+- disabled / commented out everything related to react-flow, for now
+- links to products, machines and recipes work
+- switched from a parent recipe to a list of independent factories that try to consume eachother's outputs; recipe selection simply adds a new factory when empty, it can also be added from the recipe list
+- the recipes in the home page have been replaced with ProductionNodes (i.e. each recipe has a number of factories working and it can be resized)
+- production nodes also have a usage metric to account for less than 100% utilization; this is reflected in input/output volume, but also in building needs ( construction materials, workers and unity scale with number of constructed buildings, not with usage)
+- new number spinner component to increase/decrease number of machines (it's ugly AF, I know)
+- adjusted recipe parsing to also remove dots from IDs, since mechanical parts were breaking overmind (due to "mech.parts" in key name)
+
+## TODO next
+- re-enable react-flow, add automated links between compatible inputs and outputs
+- figure out a way to render the unbalanced product selects on top or next to the react-flow canvas - adjustable sources/sinks would be nice
+- disable everything related to current import/export saturation logic, make edges either fully automated or fully manual
+- attempt automated layout filtering only for some "main" edges (first idea would be to consider only primary inputs)
+- label edges with product and rate
+
+
 ## design goals
 
 0. Learning React
